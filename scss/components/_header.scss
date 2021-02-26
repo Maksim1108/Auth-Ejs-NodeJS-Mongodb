@@ -1,0 +1,37 @@
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    &__content {
+        padding-top: vw(20);
+        @include flex-center(space-between)
+    }
+    &__logo {
+        width: vw(140);
+        height: vw(45);
+    }
+    &__link {
+        font-size: vw(18);
+        font-weight: 700;
+        color: #FFFFFF;
+        margin: vw(7) 0 0 vw(40);
+    }
+    &__auth {
+        margin-left: vw(40);
+    }
+    &__btn {
+        font-size: vw(16);
+        font-weight: 700;
+        color: #FFFFFF;
+        padding: vw(7) vw(30) vw(10) vw(30);
+        border: vw(1) solid #FFFFFF;
+        border-radius: vw(25);
+        background: transparent;
+        outline: none;
+        &:nth-child(2) {
+            background: #FFFFFF;
+            color: #363233;
+            margin-left: vw(20);
+        }
+    }
+}    

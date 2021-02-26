@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+
+    <body>
+        <%- include('../partials/header') %>
+            <main>
+                <section class="hero">
+                    <div class="container h-100">
+                        <div class="hero__content">
+                            <h1 class="hero__title">Open the world of music. <br> It’s all here.</h1>
+                            <div class="hero__row flex">
+                                <a href="#" class="hero__link hero__link--premium">MUSICBOX PREMIUM</a>
+                                <a href="#" class="hero__link">MUSICBOX FREE</a>
+                            </div>
+                            <p class="hero__description">1-month free trial <span>$7.99</span>/month after</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="flow">
+                    <div class="container">
+                        <div class="flow__content flex">
+                            <div class="col-6">
+                                <img src="/images/flow/Phone.png" alt="" class="flow__img">
+                            </div>
+                            <div class="col-6 flow__item">
+                                <h3 class="flow__title">flow</h3>
+                                <p class="flow__description">Listen to a personalized mix of tracks based on your
+                                    listening history, or create your own mix of genres, artists
+                                    and playlists - letting you enjoy more of the music you love.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="anytime">
+                    <div class="container">
+                        <div class="anytime__content">
+                            <h3 class="anytime__title">Listen anytime, anywhere</h3>
+                            <p class="anytime__description">All your favorite songs and episodes are always
+                                available - even without WiFi or LTE.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="search">
+                    <div class="container">
+                        <div class="search__content flex">
+                            <div class="col-6">
+                                <h3 class="search__title">Find the music you want</h3>
+                                <p class="search__description">Search for your favorite songs using the description,
+                                    or turn on the <span>MusicFinder</span> feature to find the song
+                                    that is playing near you.</p>
+                            </div>
+                            <div class="col-6">
+                                <img src="/images/search/Phone.png" alt="" class="search__img">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="premium">
+                    <div class="container">
+                        <div class="premium__content">
+                            <h3 class="premium__title">Why go Premium?</h3>
+                            <div class="premium__row row">
+                                <% block.forEach(item=> { %>
+                                    <div class="col-3 premium__item">
+                                        <img src="<%= item.img  %>" class="premium__img">
+                                        <span class="premium__name">
+                                            <%= item.name %>
+                                        </span>
+                                        <span class="premium__description">
+                                            <%= item.description%>
+                                        </span>
+                                    </div>
+                                    <% }); %>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="subcribe">
+                    <div class="container">
+                        <div class="subcribe__content">
+                            <h3 class="subcribe__title">Listen free or subscribe to MusicBox Premium.</h3>
+                            <div class="subcribe__row row">
+                                <div class="subcribe__box">
+                                    <div class="subcribe__card">
+                                        <span class="subcribe__name">MusicBox Free</span>
+                                        <span class="subcribe__price">$0.00/month</span>
+                                        <ul class="subcribe__list">
+                                            <li class="subcribe__item">Online listening</li>
+                                            <li class="subcribe__item">Regular audio</li>
+                                            <li class="subcribe__item">With advertising</li>
+                                            <li class="subcribe__item">30 skips per day</li>
+                                        </ul>
+                                    </div>
+                                    <button class="subcribe__btn">GET MUSICBOX FREE</button>
+                                </div>
+                                <div class="subcribe__box">
+                                    <div class="subcribe__card subcribe__card--premium">
+                                        <span class="subcribe__name">MusicBox Premium</span>
+                                        <span class="subcribe__price"><span>$7.99</span>/month</span>
+                                        <ul class="subcribe__list">
+                                            <li class="subcribe__item">Offline mode</li>
+                                            <li class="subcribe__item">High quality audio</li>
+                                            <li class="subcribe__item">No ads</li>
+                                            <li class="subcribe__item">Unlimited skips</li>
+                                        </ul>
+                                    </div>
+                                    <button class="subcribe__btn subcribe__btn--premium">GET MUSICBOX PREMIUM</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        <%- include('../partials/footer') %>
+    </body>
+
+</html>

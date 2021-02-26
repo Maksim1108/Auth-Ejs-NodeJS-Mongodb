@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.763" y1="-0.332" x2="0" y2="1.102" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9b2def"/>
+      <stop offset="0.495" stop-color="#2d9bef"/>
+      <stop offset="1" stop-color="#2dceef"/>
+    </linearGradient>
+    <filter id="Объединение_118" x="22.197" y="21.602" width="76.195" height="76.282" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feFlood flood-color="#02f" flood-opacity="0.322"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="UnlimSkips" transform="translate(-154 -1051)">
+    <circle id="Эллипс_17545" data-name="Эллипс 17545" cx="60" cy="60" r="60" transform="translate(154 1051)" fill="#363535"/>
+    <g id="Skips" transform="translate(197.2 1093.6)">
+      <g transform="matrix(1, 0, 0, 1, -43.2, -42.6)" filter="url(#Объединение_118)">
+        <path id="Объединение_118-2" data-name="Объединение 118" d="M16792.393-9355.315V-9389.6h3.6v34.282ZM16761.8-9389.6l26.143,17.417-26.143,16.865Z" transform="translate(-16718.6 9432.2)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

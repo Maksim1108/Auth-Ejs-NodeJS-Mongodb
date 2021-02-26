@@ -1,0 +1,36 @@
+.flow {
+    padding: vw(110) 0;
+    &__content {
+        @include flex-center;
+    }
+    &__img {
+        width: vw(700);
+        height: vw(700);
+    }
+    &__title {
+        position: relative;
+        font-size: vw(50);
+        font-weight: 900;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        margin: 0 0 vw(36) vw(68);
+        &::before {
+            position: absolute;
+            content: '';
+            width: vw(48);
+            height: vw(48);
+            background: url(/images/flow/flow-icon.svg) no-repeat;
+            background-size: cover;
+            left: vw(-68);
+        }
+    }
+    &__description {
+        font-size: vw(20);
+        font-weight: 400;
+        color: #FFFFFF;
+        max-width: vw(510);
+    }
+    &__item {
+        margin-left: vw(120);
+    }
+}

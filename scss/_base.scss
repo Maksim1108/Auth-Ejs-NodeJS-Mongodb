@@ -1,0 +1,45 @@
+.container {
+	max-width: vw(1440);
+	margin: 0 auto;
+}
+
+body {
+	margin: 0;
+    font-family: "Lato", "sans-serif";
+    background: #161A1A;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a,
+span {
+	display: inline-block;
+}
+
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+}

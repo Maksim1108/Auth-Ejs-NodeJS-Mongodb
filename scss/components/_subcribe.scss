@@ -1,0 +1,73 @@
+.subcribe {
+    padding-bottom: vw(167);
+    &__title {
+        font-size: vw(20);
+        font-weight: 400;
+        color: #AFAFAF;
+        text-align: center;
+    }
+    &__row {
+        justify-content: center;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        width: vw(320);
+        height: vw(360);
+        border: vw(1) solid #FFFFFF;
+        border-radius: vw(8);
+        margin: vw(35) vw(20) 0 vw(20);
+        padding: vw(25) 0 0 vw(30);
+        &--premium {
+            border: vw(1) solid linear-gradient(to left, #9b2def, #2d9bef, #35edfb);
+        }
+    }
+    &__name {
+        font-size: vw(20);
+        font-weight: 400;
+        color: #FFFFFF;
+        padding-bottom: vw(4);
+    }
+    &__price {
+        font-size: vw(24);
+        font-weight: 700;
+        color: #FFFFFF;
+        span {
+            color: #2DCEEF;
+        }
+    }
+    &__list {
+        padding: vw(70) 0 0 vw(40);
+    }
+    &__item {
+        position: relative;
+        padding-bottom: vw(29);
+        font-size: vw(18);
+        font-weight: 400;
+        color: #FFFFFF;
+        &::before {
+            position: absolute;
+            content: '';
+            width: vw(21);
+            height: vw(16);
+            background: url(/images/subcribe/icon.svg) no-repeat;
+            background-size: cover;
+            left: vw(-36);
+            top: vw(2);
+        }
+    }
+    &__btn {
+        width: vw(280);
+        height: vw(46);
+        border-radius: vw(25);
+        color: #FFFFFF;
+        font-size: vw(16);
+        margin: vw(24) 0 0 vw(60);
+        border: vw(1) solid #FFFFFF;
+        background: transparent;
+        &--premium {
+            border: none;
+            background: linear-gradient(to left, #9b2def, #2d9bef, #35edfb);
+        }
+    }
+}

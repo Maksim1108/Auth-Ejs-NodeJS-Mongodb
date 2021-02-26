@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.128" y1="1" x2="0.855" y2="-0.052" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2dceef"/>
+      <stop offset="0.502" stop-color="#2d9bef"/>
+      <stop offset="1" stop-color="#9b2def"/>
+    </linearGradient>
+    <filter id="HQ" x="21.684" y="16.2" width="76.377" height="86.188" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feFlood flood-color="#02f" flood-opacity="0.322"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="HQ-2" data-name="HQ" transform="translate(-704 -1282)">
+    <circle id="Эллипс_17547" data-name="Эллипс 17547" cx="60" cy="60" r="60" transform="translate(704 1282)" fill="#363535"/>
+    <g transform="matrix(1, 0, 0, 1, 704, 1282)" filter="url(#HQ)">
+      <path id="HQ-3" data-name="HQ" d="M18014.279-8020.811l-2.227-2.723h-.189a5.539,5.539,0,0,1-4.283-1.619,6.6,6.6,0,0,1-1.5-4.65,6.523,6.523,0,0,1,1.5-4.627,5.608,5.608,0,0,1,4.293-1.6,5.509,5.509,0,0,1,4.279,1.61,6.591,6.591,0,0,1,1.482,4.632,7.67,7.67,0,0,1-.76,3.591,4.626,4.626,0,0,1-2.229,2.117l2.922,3.266Zm-4.719-12.041a5.047,5.047,0,0,0-.777,3.067,5.059,5.059,0,0,0,.773,3.062,2.689,2.689,0,0,0,2.307,1.031q3.079,0,3.076-4.093t-3.062-4.1A2.719,2.719,0,0,0,18009.561-8032.852Zm-8.734,9.151v-5.238h-4.809v5.238h-2.568v-12.136h2.568v4.758h4.809v-4.758h2.564v12.136Zm17.746-19.7v-10.8h4.8v10.8Zm-9.857,0V-8065h4.8v21.6Zm-9.855,0v-14.995h4.8v14.995Zm-9.861,0v-6h4.8v6Z" transform="translate(-17946.31 8102.2)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

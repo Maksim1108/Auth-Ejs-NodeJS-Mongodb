@@ -1,0 +1,25 @@
+.search {
+    padding: vw(45) 0 vw(85) 0;
+    &__content {
+        @include flex-center;
+    }
+    &__title {
+        font-size: vw(36);
+        font-weight: 900;
+        color: #FFFFFF;
+        margin-bottom: vw(36);
+    }
+    &__description {
+        font-size: vw(20);
+        font-weight: 400;
+        color: #FFFFFF;
+        max-width: vw(470);
+        span {
+            color: #2DCEEF;
+        }
+    }
+    &__img {
+        width: vw(720);
+        height: vw(800);
+    }
+}

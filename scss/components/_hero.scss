@@ -1,0 +1,45 @@
+.hero {
+    height: 100vh;
+    background: url(/images/hero/hero-bg.png) no-repeat center top;
+    background-size: cover;
+    &__content {
+        height: 100%;
+        @include flex-center;
+        flex-direction: column;
+    }
+    &__row {
+        margin: vw(50) 0 vw(20);
+    }
+    &__title {
+        font-size: vw(48);
+        font-weight: 900;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    &__link {
+        width: vw(230);
+        height: vw(46);
+        border: vw(2) solid #ffffff;
+        border-radius: vw(40);
+        text-transform: uppercase;
+        text-align: center;
+        font-size: vw(16);
+        font-weight: 700;
+        color: #FFFFFF;
+        @include flex-center;
+        &--premium {
+          margin-right: vw(20);
+          background: linear-gradient(to left, #9b2def, #2d9bef, #35edfb);
+          border: none;
+        }
+    }
+    &__description {
+        font-size: vw(16);
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 1.18;
+        span {
+          color: #2dceef;
+        }
+    }
+}

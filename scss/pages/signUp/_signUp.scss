@@ -1,0 +1,85 @@
+.signup {
+    height: 100vh;
+    background: url(/images/hero/hero-bg.png) no-repeat center top;
+    background-size: cover;
+    &__content {
+        @include flex-center;
+    }
+    &__card {
+        width: vw(600);
+        height: vw(560);
+        background: #fff;
+        color: #000;
+        border-radius: vw(8);
+        box-sizing: border-box;
+        padding: vw(40) vw(86);
+    }
+    &__title {
+        font-size: vw(28);
+        font-weight: 900;
+        line-height: vw(1.2);
+        text-align: center;
+    }
+    &__row {
+        justify-content: center;
+        margin-top: vw(40);
+        &--bottom {
+            margin: vw(20) 0 vw(40) 0;
+           justify-content: space-between; 
+        }
+    }
+    &__link {
+        margin: 0 vw(10);
+        img {
+            width: vw(180);
+            height: vw(38);
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__label {
+        position: relative;
+        align-items: center;
+        margin-top: vw(35);
+    }
+    &__text {
+        position: absolute;
+        z-index: 1;
+        top: vw(5);
+        left: vw(20);
+        font-size: vw(14);
+        color: #99999F;
+    }
+    &__input {
+        width: vw(426);
+        height: vw(50);
+        box-sizing: border-box;
+        padding: vw(20) vw(20) vw(15);
+        border: vw(2) solid black;
+        border-radius: vw(4);
+        transition: 0.1s;
+        font-size: vw(14);
+        line-height: 1.2;
+        outline: none;
+        &:focus,
+        &.active {
+          border-color: #2d9bef;
+        }
+    }
+    &__select {
+        width: vw(193);
+        height: vw(50);
+    }
+    &__btn {
+        font-size: vw(16);
+        font-weight: 700;
+        color: #FFFFFF;
+        width: vw(320);
+        height: vw(40);
+        background:#2D9BEF ;
+        border-radius: vw(20);
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,17 @@
+.anytime {
+    padding: vw(250) 0;
+    background: url(/images/anytime/anytime-bg.png) no-repeat center top;
+    background-size: cover;
+    &__title {
+        font-size: vw(36);
+        font-weight: 900;
+        color: #FFFFFF;
+        padding-bottom: vw(36);
+    }
+    &__description {
+        max-width: vw(431);
+        font-size: vw(20);
+        font-weight: 400;
+        color: #FFFFFF;
+    }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="36" viewBox="0 0 180 36">
+  <g id="Facebook" transform="translate(-806 -215)">
+    <rect id="Прямоугольник_1268" data-name="Прямоугольник 1268" width="180" height="36" rx="18" transform="translate(806 215)" fill="#4267b2"/>
+    <g id="facebook-letter-logo" transform="translate(711.305 222.999)">
+      <path id="Facebook-2" data-name="Facebook" d="M116.713,3.874V6.628H114.7V10h2.017V20h4.144V10h2.781s.26-1.615.387-3.38h-3.152v-2.3a.978.978,0,0,1,.9-.807h2.258V0h-3.07C116.611,0,116.713,3.371,116.713,3.874Z" fill="#fff"/>
+    </g>
+    <text id="Facebook-3" data-name="Facebook" transform="translate(926 237)" fill="#fff" font-size="14" font-family="Lato-Regular, Lato" letter-spacing="0.006em"><tspan x="-59.248" y="0">Facebook</tspan></text>
+  </g>
+</svg>

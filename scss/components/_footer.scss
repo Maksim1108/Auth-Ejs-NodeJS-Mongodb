@@ -1,0 +1,28 @@
+.footer {
+    background: #000000;
+    padding: vw(80) 0 vw(110) 0;
+    &__content {
+        justify-content: space-between;
+    }
+    &__list {
+        margin-left: vw(130);
+    }
+    &__subtitle {
+        font-size: vw(14);
+        font-weight: 700;
+        color: #848484;
+        margin-bottom: vw(22);
+    }
+    &__link {
+        font-size: vw(14);
+        font-weight: 400;
+        color: #FFFFFF;
+        margin-bottom: vw(22);
+    }
+    &__social {
+        justify-content: end;
+    }
+    &__icon {
+        margin-left: vw(20);
+    }
+}
