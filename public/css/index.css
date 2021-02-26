@@ -646,35 +646,6 @@ button {
   margin-top: 1.82292vw;
 }
 
-.login__text {
-  position: absolute;
-  z-index: 1;
-  top: 0.26042vw;
-  left: 1.04167vw;
-  font-size: 0.72917vw;
-  color: #99999F;
-}
-
-.login__input {
-  width: 22.1875vw;
-  height: 2.60417vw;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 1.04167vw 1.04167vw 0.78125vw;
-  border: 0.10417vw solid black;
-  border-radius: 0.20833vw;
-  -webkit-transition: 0.1s;
-  -o-transition: 0.1s;
-  transition: 0.1s;
-  font-size: 0.72917vw;
-  line-height: 1.2;
-  outline: none;
-}
-
-.login__input:focus, .login__input.active {
-  border-color: #2d9bef;
-}
-
 .login__btn {
   width: 10.78125vw;
   padding: 0.625vw 0;
@@ -727,6 +698,57 @@ button {
 
 .login__q {
   font-size: 1.04167vw;
+}
+
+.label__text {
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  line-height: 1.2;
+  position: absolute;
+  z-index: 1;
+  top: 1.14583vw;
+  left: 1.04167vw;
+  font-size: 0.83333vw;
+  color: #99999F;
+}
+
+.label__input {
+  width: 22.1875vw;
+  height: 2.60417vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1.04167vw 1.04167vw 0.78125vw;
+  border: 0.10417vw solid black;
+  border-radius: 0.20833vw;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  font-size: 0.72917vw;
+  line-height: 1.2;
+  outline: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.label__input:focus, .label__input.active {
+  border-color: #2d9bef;
+}
+
+.label__input:focus + .label__text, .label__input.active + .label__text {
+  top: 20%;
+  font-size: 0.57292vw;
+  color: #898b91;
+}
+
+.label.active .label__text {
+  top: 20%;
+  font-size: 0.72917vw;
+  color: #898b91;
 }
 
 .signup {
@@ -806,35 +828,6 @@ button {
   margin-top: 1.82292vw;
 }
 
-.signup__text {
-  position: absolute;
-  z-index: 1;
-  top: 0.26042vw;
-  left: 1.04167vw;
-  font-size: 0.72917vw;
-  color: #99999F;
-}
-
-.signup__input {
-  width: 22.1875vw;
-  height: 2.60417vw;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 1.04167vw 1.04167vw 0.78125vw;
-  border: 0.10417vw solid black;
-  border-radius: 0.20833vw;
-  -webkit-transition: 0.1s;
-  -o-transition: 0.1s;
-  transition: 0.1s;
-  font-size: 0.72917vw;
-  line-height: 1.2;
-  outline: none;
-}
-
-.signup__input:focus, .signup__input.active {
-  border-color: #2d9bef;
-}
-
 .signup__select {
   width: 10.05208vw;
   height: 2.60417vw;
@@ -849,4 +842,55 @@ button {
   background: #2D9BEF;
   border-radius: 1.04167vw;
   margin: 0 auto;
+}
+
+.label__text {
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  line-height: 1.2;
+  position: absolute;
+  z-index: 1;
+  top: 1.14583vw;
+  left: 1.04167vw;
+  font-size: 0.83333vw;
+  color: #99999F;
+}
+
+.label__input {
+  width: 22.1875vw;
+  height: 2.60417vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1.04167vw 1.04167vw 0.78125vw;
+  border: 0.10417vw solid black;
+  border-radius: 0.20833vw;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  font-size: 0.72917vw;
+  line-height: 1.2;
+  outline: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.label__input:focus, .label__input.active {
+  border-color: #2d9bef;
+}
+
+.label__input:focus + .label__text, .label__input.active + .label__text {
+  top: 20%;
+  font-size: 0.57292vw;
+  color: #898b91;
+}
+
+.label.active .label__text {
+  top: 20%;
+  font-size: 0.72917vw;
+  color: #898b91;
 }
