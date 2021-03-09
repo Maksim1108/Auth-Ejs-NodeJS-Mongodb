@@ -1,38 +1,68 @@
 <section class="signup">
-    <div class="container h-100">
-        <div class="signup__content h-100">
-            <div class="signup__card">
-                <h1 class="signup__title">Ready to sign up?</h1>
-                <div class="signup__row row">
-                    <a href="" class="signup__link"><img src="/images/login/Facebook.svg" alt=""></a>
-                    <a href="" class="signup__link"><img src="/images/login/Google.svg" alt=""></a>
-                </div>
-                <form action="" class="signup__form">
-                    <label for="email" class="signup__label label">
-                        <input type="text" class="label__input" name="email" id="email">
-                        <span class="label__text">Email address</span>
-                    </label>
-                    <label for="signup-password" class="signup__label label">
-                        <input type="password" class="label__input" name="signup-password" id="signup-password">
-                        <span class="label__text">Password</span>
-                    </label>
-                    <label for="username" class="signup__label label">
-                        <input type="text" class="label__input" name="username" id="username">
-                        <span class="label__text">Username</span>
-                    </label>
-                    <div class="signup__row--bottom row">
-                        <select class="signup__select" name="Date of Birth" id="">
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
-                        <select class="signup__select" name="Gender" id="">
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
-                    </div>
-                    <button type="submit" class="signup__btn">SIGN UP</button>
-                </form>
-            </div>
+  <div class="container h-100">
+    <div class="signup__content h-100">
+      <div class="signup__card">
+        <h1 class="signup__title">Ready to sign up?</h1>
+        <div class="signup__row row">
+          <a href="" class="signup__link"><img src="/images/login/Facebook.svg" alt="" /></a>
+          <a href="" class="signup__link"><img src="/images/login/Google.svg" alt="" /></a>
         </div>
+
+        <form action="" class="signup__form">
+          <label for="email" class="signup__label">
+            <input type="text" class="signup__input" name="email" id="email" />
+            <span class="signup__text email">Введите вашу почту</span>
+          </label>
+          <label for="password" class="signup__label">
+            <input type="password" class="signup__input" name="password" id="signup-password" />
+            <span class="signup__text password">Password</span>
+          </label>
+          <label for="username" class="signup__label">
+            <input
+              placeholder="Username"
+              type="text"
+              class="signup__input"
+              name="username"
+              id="username"
+            />
+            <span class="signup__text username">Username</span>
+          </label>
+          <button type="submit" class="signup__btn">SIGN UP</button>
+        </form>
+      </div>
     </div>
+  </div>
 </section>
+
+<script>
+  const form = document.querySelector('.signup__form');
+
+  const usernameError = document.querySelector('.signup__text.username');
+  const emailError = document.querySelector('.signup__text.email');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const email = form.email.value;
+    const username = form.username.value;
+    const password = form.password.value;
+
+    try {
+      const res = await fetch('/signup', {
+        method: 'POST',
+        body: JSON.stringify({ email, username, password }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+      const data = await res.json();
+      if (data.errors) {
+        usernameError.innerHTML = data.errors.username;
+        emailError.innerHTML = data.errors.email;
+      }
+      if (data.user) {
+        location.assign('/home');
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  });
+</script>

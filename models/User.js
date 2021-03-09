@@ -1,19 +1,47 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const { isEmail } = require('validator');
+const bcrypt = require('bcrypt');
 
-const userSchema= new mongoose.Schema({
-    username : {
-        type: String,
-        required: true,
-        unique: true,
-        lowercase: true,
-    },
-    password: {
-        type: String,
-        required: true,
-        minLength: 6,
-    },
-})
+const userSchema = new mongoose.Schema({
+  username: {
+    type: String,
+    required: [true, 'user is not defined'],
+    unique: true,
+  },
+  email: {
+    type: String,
+    required: [true, 'email is not defined'],
+    unique: true,
+    lowercase: true,
+    validate: [isEmail, 'Пожалуйста, введите валидную почту'],
+  },
+  password: {
+    type: String,
+    required: [true, 'password is not defined'],
+    minLength: [6, 'длина пароля меньше 6, пожалуйста, введите валидный пароль'],
+  },
+});
 
-const User = mongoose.model('user', userSchema)
+// Запусти эту функцию ПЕРЕД тем как создать нового пользователя
+userSchema.pre('save', async function (next) {
+  const salt = await bcrypt.genSalt();
+  this.password = await bcrypt.hash(this.password, salt);
+  next();
+});
 
-module.exports = User
+userSchema.statics.login = async function (email, password) {
+  const user = await this.findOne({ email });
+
+  if (user) {
+    const auth = await bcrypt.compare(password, user.password);
+    if (auth) {
+      return user;
+    }
+    throw Error('Пароль не правильный');
+  }
+  throw Error('Такого аккаунта не существует');
+};
+
+const User = mongoose.model('user', userSchema);
+
+module.exports = User;
