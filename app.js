@@ -2,10 +2,11 @@ const express = require('express');
 const mongoose = require('mongoose');
 const authRouter = require('./routes/authRoutes');
 const cookieParser = require('cookie-parser');
+const { requireAuth } = require('./middlewares/authMiddleware');
 
 const app = express();
 
-const dbURI = `mongodb+srv://Maksim:Ebaloff1337228@auth.owkca.mongodb.net/auth?retryWrites=true&w=majority`;
+const dbURI = `mongodb+srv://atabek:1234@jwt.fdac9.mongodb.net/jwt?retryWrites=true&w=majority`;
 
 app.set('view engine', 'ejs');
 
@@ -41,7 +42,11 @@ app.get('/', (req, res) => {
   res.render('pages/index', { block });
 });
 
+app.get('/moods', requireAuth, (req, res) => {
+  res.render('pages/moods');
+});
+
 app.get('/home', (req, res) => {
   res.render('pages/home');
 });
-app.use(authRouter);
+app.use(authRouter); 

@@ -2,7 +2,16 @@ const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 
 const handleErrors = (err) => {
+  console.log(err.message);
   let errors = { email: '', password: '', username: '' };
+
+  if (err.message === 'Такого аккаунта не существует') {
+    errors.email = 'Эта почта еще не была зарегистрирована в системе';
+  }
+
+  if (err.message === 'Пароль неправильный') {
+    errors.password = 'Пароль который вы вели является не валидным';
+  }
 
   if (err.keyValue.username) {
     errors.username = 'Такой пользователь уже был создан';
@@ -24,7 +33,7 @@ const handleErrors = (err) => {
 
 const maxAge = 3 * 24 * 60 * 60;
 const createToken = (id) => {
-  return jwt.sign({ id }, 'aiza-ayday-zhamal', {
+  return jwt.sign({ id }, 'ayday', {
     expiresIn: maxAge,
   });
 };
@@ -40,13 +49,13 @@ const signUp_get = (req, res) => {
 const logIn_post = async (req, res) => {
   const { email, password } = req.body;
 
-  console.log(req.body);
-
   try {
     const user = await User.login(email, password);
-    res.status(200).json({ user: user._id });
+    const token = createToken(user._id);
+    res.cookie('jwt', token, { httpOnly: true });
+    res.status(201).json({ user: user._id });
   } catch (err) {
-    console.log(err);
+    const errors = handleErrors(err);
     res.status(400).json({ err });
   }
 };
@@ -55,7 +64,7 @@ const signUp_post = async (req, res) => {
   try {
     const user = await User.create({ ...req.body });
     const token = createToken(user._id);
-    res.cookie('ayday', token, { httpOnly: true });
+    res.cookie('jwt', token, { httpOnly: true });
     res.status(201).json({ user: user._id });
   } catch (err) {
     const errors = handleErrors(err);

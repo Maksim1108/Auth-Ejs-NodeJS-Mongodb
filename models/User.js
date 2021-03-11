@@ -37,7 +37,7 @@ userSchema.statics.login = async function (email, password) {
     if (auth) {
       return user;
     }
-    throw Error('Пароль не правильный');
+    throw Error('Пароль неправильный');
   }
   throw Error('Такого аккаунта не существует');
 };
