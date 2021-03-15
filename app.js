@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const authRouter = require('./routes/authRoutes');
 const cookieParser = require('cookie-parser');
-const { requireAuth } = require('./middlewares/authMiddleware');
+const { requireAuth, checkUser } = require('./middlewares/authMiddleware');
 
 const app = express();
 
@@ -37,6 +37,8 @@ const block = [
     description: 'Just tap skip.',
   },
 ];
+
+app.get('*', checkUser)
 
 app.get('/', (req, res) => {
   res.render('pages/index', { block });
