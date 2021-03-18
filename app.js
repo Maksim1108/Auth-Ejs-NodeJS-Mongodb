@@ -3,10 +3,13 @@ const mongoose = require('mongoose');
 const authRouter = require('./routes/authRoutes');
 const cookieParser = require('cookie-parser');
 const { requireAuth, checkUser } = require('./middlewares/authMiddleware');
+const multer = require('multer');
+const path = require('path');
+const { log } = require('console');
 
 const app = express();
 
-const dbURI = `mongodb+srv://atabek:1234@jwt.fdac9.mongodb.net/jwt?retryWrites=true&w=majority`;
+const dbURI = `mongodb+srv://Maksim:Ebaloff1337228@auth.owkca.mongodb.net/auth?retryWrites=true&w=majority`;
 
 app.set('view engine', 'ejs');
 
@@ -38,7 +41,29 @@ const block = [
   },
 ];
 
+const storage = multer.diskStorage({
+  destination: './public/uploads/',
+  filename: function (req, file, cb) {
+    cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
+  }
+})
+
+const upload = multer({
+  storage,
+}).single('myPhoto')
+
 app.get('*', checkUser)
+
+app.post('/upload', (req, res) => {
+  upload(req, res, (err) => {
+    if(err) {
+      res.render('oopss', {message: err})
+    } else {
+      const filename = req.file.filename
+      res.render('settings', {filename})
+    }
+  })
+})
 
 app.get('/', (req, res) => {
   res.render('pages/index', { block });

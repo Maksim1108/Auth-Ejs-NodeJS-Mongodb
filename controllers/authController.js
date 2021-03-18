@@ -77,4 +77,8 @@ const logOut_get = (req, res) => {
   res.redirect('/')
 }
 
-module.exports = { logIn_get, signUp_get, logIn_post, signUp_post, logOut_get };
+const settings = (req, res) => {
+  res.render('pages/settings')
+}
+
+module.exports = { logIn_get, signUp_get, logIn_post, signUp_post, logOut_get, settings };
