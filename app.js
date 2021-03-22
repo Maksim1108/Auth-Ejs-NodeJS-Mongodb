@@ -5,7 +5,6 @@ const cookieParser = require('cookie-parser');
 const { requireAuth, checkUser } = require('./middlewares/authMiddleware');
 const multer = require('multer');
 const path = require('path');
-const { log } = require('console');
 
 const app = express();
 

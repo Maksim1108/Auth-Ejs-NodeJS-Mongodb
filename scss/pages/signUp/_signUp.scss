@@ -7,7 +7,7 @@
     }
     &__card {
         width: vw(600);
-        height: vw(740);
+        height: vw(563);
         background: #fff;
         color: #000;
         border-radius: vw(8);
@@ -21,17 +21,13 @@
         text-align: center;
     }
     &__row {
-        justify-content: center;
+        justify-content: space-evenly;
         margin-top: vw(40);
-        &--bottom {
-            margin: vw(20) 0 vw(40) 0;
-           justify-content: space-between; 
-        }
     }
     &__link {
         img {
             width: vw(180);
-            height: vw(36);
+            height: vw(40);
         }
     }
     &__form {
@@ -79,6 +75,6 @@
         height: vw(40);
         background:#2D9BEF ;
         border-radius: vw(20);
-        margin: 0 auto;
+        margin: vw(30) auto;
     }
 }

@@ -21,17 +21,13 @@
         text-align: center;
     }
     &__row {
-        justify-content: center;
+        justify-content: space-evenly;
         margin-top: vw(40);
-        &--bottom {
-            margin-top: vw(30);
-            justify-content: space-between;
-        }
     }
     &__link {
         img {
             width: vw(180);
-            height: vw(36);
+            height: vw(40);
         }
     }
     &__form {
@@ -76,11 +72,11 @@
         font-weight: 700;
         line-height: 1.2;
         color: #fff;
+        margin: vw(25) auto;
     }
     &__box-text {
         display: flex;
         flex-direction: column;
-        margin-top: vw(18);
         text-align: center;
         a {
             font-size: vw(16);
@@ -98,6 +94,5 @@
         font-size: vw(16);
         font-weight: 700;
         color: #2D9BEF;
-        margin-bottom: vw(51);
     }
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 .container {
   max-width: 75vw;
   margin: 0 auto;
@@ -6,8 +6,8 @@
 
 body {
   margin: 0;
-  font-family: 'Lato', 'sans-serif';
-  background: #161a1a;
+  font-family: "Lato", "sans-serif";
+  background: #161A1A;
 }
 
 h1,
@@ -128,7 +128,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .flex {
@@ -157,11 +157,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__logo {
@@ -172,7 +172,7 @@ button {
 .header__link {
   font-size: 0.9375vw;
   font-weight: 700;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0.36458vw 0 0 2.08333vw;
 }
 
@@ -183,16 +183,16 @@ button {
 .header__btn {
   font-size: 0.83333vw;
   font-weight: 700;
-  color: #ffffff;
+  color: #FFFFFF;
   padding: 0.36458vw 1.5625vw 0.52083vw 1.5625vw;
-  border: 0.05208vw solid #ffffff;
+  border: 0.05208vw solid #FFFFFF;
   border-radius: 1.30208vw;
   background: transparent;
   outline: none;
 }
 
 .header__btn:nth-child(2) {
-  background: #ffffff;
+  background: #FFFFFF;
   color: #363233;
   margin-left: 1.04167vw;
 }
@@ -209,15 +209,15 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .hero__row {
@@ -227,7 +227,7 @@ button {
 .hero__title {
   font-size: 2.5vw;
   font-weight: 900;
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: center;
 }
 
@@ -240,28 +240,21 @@ button {
   text-align: center;
   font-size: 0.83333vw;
   font-weight: 700;
-  color: #ffffff;
+  color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero__link--premium {
   margin-right: 1.04167vw;
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(#9b2def),
-    color-stop(#2d9bef),
-    to(#35edfb)
-  );
+  background: -webkit-gradient(linear, right top, left top, from(#9b2def), color-stop(#2d9bef), to(#35edfb));
   background: -webkit-linear-gradient(right, #9b2def, #2d9bef, #35edfb);
   background: -o-linear-gradient(right, #9b2def, #2d9bef, #35edfb);
   background: linear-gradient(to left, #9b2def, #2d9bef, #35edfb);
@@ -270,7 +263,7 @@ button {
 
 .hero__description {
   font-size: 0.83333vw;
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: center;
   line-height: 1.18;
 }
@@ -288,11 +281,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .flow__img {
@@ -304,7 +297,7 @@ button {
   position: relative;
   font-size: 2.60417vw;
   font-weight: 900;
-  color: #ffffff;
+  color: #FFFFFF;
   text-transform: uppercase;
   margin: 0 0 1.875vw 3.54167vw;
 }
@@ -322,7 +315,7 @@ button {
 .flow__description {
   font-size: 1.04167vw;
   font-weight: 400;
-  color: #ffffff;
+  color: #FFFFFF;
   max-width: 26.5625vw;
 }
 
@@ -339,7 +332,7 @@ button {
 .anytime__title {
   font-size: 1.875vw;
   font-weight: 900;
-  color: #ffffff;
+  color: #FFFFFF;
   padding-bottom: 1.875vw;
 }
 
@@ -347,7 +340,7 @@ button {
   max-width: 22.44792vw;
   font-size: 1.04167vw;
   font-weight: 400;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .search {
@@ -359,29 +352,29 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .search__title {
   font-size: 1.875vw;
   font-weight: 900;
-  color: #ffffff;
+  color: #FFFFFF;
   margin-bottom: 1.875vw;
 }
 
 .search__description {
   font-size: 1.04167vw;
   font-weight: 400;
-  color: #ffffff;
+  color: #FFFFFF;
   max-width: 24.47917vw;
 }
 
 .search__description span {
-  color: #2dceef;
+  color: #2DCEEF;
 }
 
 .search__img {
@@ -396,7 +389,7 @@ button {
 .premium__title {
   font-size: 1.875vw;
   font-weight: 900;
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: center;
   margin-bottom: 3.64583vw;
 }
@@ -410,15 +403,15 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .premium__img {
@@ -429,7 +422,7 @@ button {
 .premium__name {
   font-size: 1.04167vw;
   font-weight: 400;
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: center;
   padding: 0.83333vw 0 0.26042vw 0;
 }
@@ -437,7 +430,7 @@ button {
 .premium__description {
   font-size: 0.72917vw;
   font-weight: 400;
-  color: #afafaf;
+  color: #AFAFAF;
   text-align: center;
 }
 
@@ -448,14 +441,14 @@ button {
 .subcribe__title {
   font-size: 1.04167vw;
   font-weight: 400;
-  color: #afafaf;
+  color: #AFAFAF;
   text-align: center;
 }
 
 .subcribe__row {
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .subcribe__card {
@@ -464,11 +457,11 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 16.66667vw;
   height: 18.75vw;
-  border: 0.05208vw solid #ffffff;
+  border: 0.05208vw solid #FFFFFF;
   border-radius: 0.41667vw;
   margin: 1.82292vw 1.04167vw 0 1.04167vw;
   padding: 1.30208vw 0 0 1.5625vw;
@@ -481,18 +474,18 @@ button {
 .subcribe__name {
   font-size: 1.04167vw;
   font-weight: 400;
-  color: #ffffff;
+  color: #FFFFFF;
   padding-bottom: 0.20833vw;
 }
 
 .subcribe__price {
   font-size: 1.25vw;
   font-weight: 700;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .subcribe__price span {
-  color: #2dceef;
+  color: #2DCEEF;
 }
 
 .subcribe__list {
@@ -504,7 +497,7 @@ button {
   padding-bottom: 1.51042vw;
   font-size: 0.9375vw;
   font-weight: 400;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .subcribe__item::before {
@@ -522,23 +515,16 @@ button {
   width: 14.58333vw;
   height: 2.39583vw;
   border-radius: 1.30208vw;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 0.83333vw;
   margin: 1.25vw 0 0 3.125vw;
-  border: 0.05208vw solid #ffffff;
+  border: 0.05208vw solid #FFFFFF;
   background: transparent;
 }
 
 .subcribe__btn--premium {
   border: none;
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(#9b2def),
-    color-stop(#2d9bef),
-    to(#35edfb)
-  );
+  background: -webkit-gradient(linear, right top, left top, from(#9b2def), color-stop(#2d9bef), to(#35edfb));
   background: -webkit-linear-gradient(right, #9b2def, #2d9bef, #35edfb);
   background: -o-linear-gradient(right, #9b2def, #2d9bef, #35edfb);
   background: linear-gradient(to left, #9b2def, #2d9bef, #35edfb);
@@ -551,8 +537,8 @@ button {
 
 .footer__content {
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__list {
@@ -569,14 +555,14 @@ button {
 .footer__link {
   font-size: 0.72917vw;
   font-weight: 400;
-  color: #ffffff;
+  color: #FFFFFF;
   margin-bottom: 1.14583vw;
 }
 
 .footer__social {
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .footer__icon {
@@ -594,11 +580,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .login__card {
@@ -608,7 +594,7 @@ button {
   color: #000;
   border-radius: 0.41667vw;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 2.08333vw 4.47917vw;
 }
 
@@ -620,22 +606,15 @@ button {
 }
 
 .login__row {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-top: 2.08333vw;
-}
-
-.login__row--bottom {
-  margin-top: 1.5625vw;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .login__link img {
   width: 9.375vw;
-  height: 1.875vw;
+  height: 2.08333vw;
 }
 
 .login__form {
@@ -644,15 +623,15 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .login__label {
   position: relative;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 1.82292vw;
 }
 
@@ -662,14 +641,14 @@ button {
   top: 0.26042vw;
   left: 1.04167vw;
   font-size: 0.72917vw;
-  color: #99999f;
+  color: #99999F;
 }
 
 .login__input {
   width: 22.1875vw;
   height: 2.60417vw;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 1.04167vw 1.04167vw 0.78125vw;
   border: 0.10417vw solid black;
   border-radius: 0.20833vw;
@@ -681,8 +660,7 @@ button {
   outline: none;
 }
 
-.login__input:focus,
-.login__input.active {
+.login__input:focus, .login__input.active {
   border-color: #2d9bef;
 }
 
@@ -695,6 +673,7 @@ button {
   font-weight: 700;
   line-height: 1.2;
   color: #fff;
+  margin: 1.30208vw auto;
 }
 
 .login__box-text {
@@ -703,9 +682,8 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-top: 0.9375vw;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
@@ -722,18 +700,17 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .login__forgot {
   font-size: 0.83333vw;
   font-weight: 700;
-  color: #2d9bef;
-  margin-bottom: 2.65625vw;
+  color: #2D9BEF;
 }
 
 .signup {
@@ -747,21 +724,21 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .signup__card {
   width: 31.25vw;
-  height: 38.54167vw;
+  height: 29.32292vw;
   background: #fff;
   color: #000;
   border-radius: 0.41667vw;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 2.08333vw 4.47917vw;
 }
 
@@ -773,22 +750,15 @@ button {
 }
 
 .signup__row {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-top: 2.08333vw;
-}
-
-.signup__row--bottom {
-  margin: 1.04167vw 0 2.08333vw 0;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .signup__link img {
   width: 9.375vw;
-  height: 1.875vw;
+  height: 2.08333vw;
 }
 
 .signup__form {
@@ -797,15 +767,15 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .signup__label {
   position: relative;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 1.82292vw;
 }
 
@@ -815,14 +785,14 @@ button {
   top: 0.26042vw;
   left: 1.04167vw;
   font-size: 0.72917vw;
-  color: #99999f;
+  color: #99999F;
 }
 
 .signup__input {
   width: 22.1875vw;
   height: 2.60417vw;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 1.04167vw 1.04167vw 0.78125vw;
   border: 0.10417vw solid black;
   border-radius: 0.20833vw;
@@ -834,8 +804,7 @@ button {
   outline: none;
 }
 
-.signup__input:focus,
-.signup__input.active {
+.signup__input:focus, .signup__input.active {
   border-color: #2d9bef;
 }
 
@@ -847,12 +816,12 @@ button {
 .signup__btn {
   font-size: 0.83333vw;
   font-weight: 700;
-  color: #ffffff;
+  color: #FFFFFF;
   width: 16.66667vw;
   height: 2.08333vw;
-  background: #2d9bef;
+  background: #2D9BEF;
   border-radius: 1.04167vw;
-  margin: 0 auto;
+  margin: 1.5625vw auto;
 }
 
 .home__title {
