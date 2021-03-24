@@ -8,7 +8,7 @@ const path = require('path');
 
 const app = express();
 
-const dbURI = `mongodb+srv://Maksim:Ebaloff1337228@auth.owkca.mongodb.net/auth?retryWrites=true&w=majority`;
+const dbURI = `mongodb+srv://Maksim:<password>@auth.owkca.mongodb.net/auth?retryWrites=true&w=majority`;
 
 app.set('view engine', 'ejs');
 
